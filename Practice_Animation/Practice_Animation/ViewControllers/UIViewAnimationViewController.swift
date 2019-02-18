@@ -20,6 +20,9 @@ class UIViewAnimationViewController: UIViewController {
     @IBOutlet weak var label_Duration   :UILabel!
     @IBOutlet weak var label_Distance   :UILabel!
     
+    @IBOutlet weak var button_CurveIn   :UIButton!
+    @IBOutlet weak var button_CurveOut  :UIButton!
+    
     var array_Buttons: [UIButton] = []
 
     override func viewDidLoad() {
@@ -74,8 +77,23 @@ class UIViewAnimationViewController: UIViewController {
             break
         }
         
+        var animationOptions: UIView.AnimationOptions!
+        
+        if (button_CurveIn.isSelected && button_CurveOut.isSelected) {
+            animationOptions = UIView.AnimationOptions.curveEaseInOut
+        }
+        else if (button_CurveIn.isSelected) {
+            animationOptions = UIView.AnimationOptions.curveEaseIn
+        }
+        else if (button_CurveOut.isSelected) {
+            animationOptions = UIView.AnimationOptions.curveEaseOut
+        }
+        else {
+            animationOptions = UIView.AnimationOptions.curveLinear
+        }
+        
         let duration = label_Duration.text?.timeIntervalValue
-        UIView.animate(withDuration: duration!, animations: {
+        UIView.animate(withDuration: duration!, delay: 0, options: animationOptions, animations: {
             self.imageView.frame.origin = position
         }) { (Bool) in
             // unblock all buttons after animation
@@ -106,5 +124,9 @@ class UIViewAnimationViewController: UIViewController {
         }) { (Bool) in
             self.view_Properties.removeFromSuperview()
         }
+    }
+    
+    @IBAction func action_UsingCurve(sender: UIButton) {
+        sender.isSelected = !sender.isSelected
     }
 }
