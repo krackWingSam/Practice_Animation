@@ -12,6 +12,11 @@
 		897CAC4D221A89000047E08E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897CAC4B221A89000047E08E /* Main.storyboard */; };
 		897CAC4F221A89010047E08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897CAC4E221A89010047E08E /* Assets.xcassets */; };
 		897CAC52221A89010047E08E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897CAC50221A89010047E08E /* LaunchScreen.storyboard */; };
+		897CAC5B221A8A3D0047E08E /* UIViewAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CAC5A221A8A3D0047E08E /* UIViewAnimationViewController.swift */; };
+		897CAE5A221A92180047E08E /* Teacher_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 897CAE59221A92180047E08E /* Teacher_icon@2x.png */; };
+		897CAE5D221AA0670047E08E /* KeyValueObservingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CAE5C221AA0670047E08E /* KeyValueObservingViewController.swift */; };
+		897CAE60221AA2F90047E08E /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CAE5F221AA2F90047E08E /* UILabelExtension.swift */; };
+		897CAE62221AA65F0047E08E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CAE61221AA65F0047E08E /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		897CAC4E221A89010047E08E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		897CAC51221A89010047E08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		897CAC53221A89010047E08E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897CAC5A221A8A3D0047E08E /* UIViewAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAnimationViewController.swift; sourceTree = "<group>"; };
+		897CAE59221A92180047E08E /* Teacher_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Teacher_icon@2x.png"; sourceTree = "<group>"; };
+		897CAE5C221AA0670047E08E /* KeyValueObservingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueObservingViewController.swift; sourceTree = "<group>"; };
+		897CAE5F221AA2F90047E08E /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		897CAE61221AA65F0047E08E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		897CAC46221A89000047E08E /* Practice_Animation */ = {
 			isa = PBXGroup;
 			children = (
+				897CAE5E221AA2A60047E08E /* Extensions */,
 				897CAC47221A89000047E08E /* AppDelegate.swift */,
-				897CAC49221A89000047E08E /* ViewController.swift */,
+				897CAC59221A89C70047E08E /* ViewControllers */,
+				897CAE5B221A921C0047E08E /* Support */,
 				897CAC4B221A89000047E08E /* Main.storyboard */,
-				897CAC4E221A89010047E08E /* Assets.xcassets */,
 				897CAC50221A89010047E08E /* LaunchScreen.storyboard */,
-				897CAC53221A89010047E08E /* Info.plist */,
 			);
 			path = Practice_Animation;
+			sourceTree = "<group>";
+		};
+		897CAC59221A89C70047E08E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				897CAC49221A89000047E08E /* ViewController.swift */,
+				897CAC5A221A8A3D0047E08E /* UIViewAnimationViewController.swift */,
+				897CAE5C221AA0670047E08E /* KeyValueObservingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		897CAE58221A92180047E08E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				897CAE59221A92180047E08E /* Teacher_icon@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		897CAE5B221A921C0047E08E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				897CAE58221A92180047E08E /* Images */,
+				897CAC53221A89010047E08E /* Info.plist */,
+				897CAC4E221A89010047E08E /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		897CAE5E221AA2A60047E08E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				897CAE5F221AA2F90047E08E /* UILabelExtension.swift */,
+				897CAE61221AA65F0047E08E /* StringExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897CAE5A221A92180047E08E /* Teacher_icon@2x.png in Resources */,
 				897CAC52221A89010047E08E /* LaunchScreen.storyboard in Resources */,
 				897CAC4F221A89010047E08E /* Assets.xcassets in Resources */,
 				897CAC4D221A89000047E08E /* Main.storyboard in Resources */,
@@ -135,8 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897CAE5D221AA0670047E08E /* KeyValueObservingViewController.swift in Sources */,
 				897CAC4A221A89000047E08E /* ViewController.swift in Sources */,
+				897CAE62221AA65F0047E08E /* StringExtension.swift in Sources */,
+				897CAE60221AA2F90047E08E /* UILabelExtension.swift in Sources */,
 				897CAC48221A89000047E08E /* AppDelegate.swift in Sources */,
+				897CAC5B221A8A3D0047E08E /* UIViewAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +336,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXU23UYV46;
-				INFOPLIST_FILE = Practice_Animation/Info.plist;
+				INFOPLIST_FILE = Practice_Animation/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +355,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXU23UYV46;
-				INFOPLIST_FILE = Practice_Animation/Info.plist;
+				INFOPLIST_FILE = Practice_Animation/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
