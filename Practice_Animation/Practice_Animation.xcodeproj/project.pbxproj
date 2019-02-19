@@ -18,6 +18,7 @@
 		897CAE60221AA2F90047E08E /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CAE5F221AA2F90047E08E /* UILabelExtension.swift */; };
 		897CAE62221AA65F0047E08E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CAE61221AA65F0047E08E /* StringExtension.swift */; };
 		897CAE64221AAEC30047E08E /* DragAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CAE63221AAEC30047E08E /* DragAnimationViewController.swift */; };
+		89F23727221BA2EF0056C208 /* DragImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F23726221BA2EF0056C208 /* DragImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		897CAE5F221AA2F90047E08E /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		897CAE61221AA65F0047E08E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		897CAE63221AAEC30047E08E /* DragAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAnimationViewController.swift; sourceTree = "<group>"; };
+		89F23726221BA2EF0056C208 /* DragImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,9 @@
 		897CAC46221A89000047E08E /* Practice_Animation */ = {
 			isa = PBXGroup;
 			children = (
-				897CAE5E221AA2A60047E08E /* Extensions */,
 				897CAC47221A89000047E08E /* AppDelegate.swift */,
+				897CAE5E221AA2A60047E08E /* Extensions */,
+				89F23725221BA2A70056C208 /* Object */,
 				897CAC59221A89C70047E08E /* ViewControllers */,
 				897CAE5B221A921C0047E08E /* Support */,
 				897CAC4B221A89000047E08E /* Main.storyboard */,
@@ -112,6 +115,14 @@
 				897CAE61221AA65F0047E08E /* StringExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		89F23725221BA2A70056C208 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				89F23726221BA2EF0056C208 /* DragImageView.swift */,
+			);
+			path = Object;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 			files = (
 				897CAE5D221AA0670047E08E /* KeyValueObservingViewController.swift in Sources */,
 				897CAC4A221A89000047E08E /* ViewController.swift in Sources */,
+				89F23727221BA2EF0056C208 /* DragImageView.swift in Sources */,
 				897CAE64221AAEC30047E08E /* DragAnimationViewController.swift in Sources */,
 				897CAE62221AA65F0047E08E /* StringExtension.swift in Sources */,
 				897CAE60221AA2F90047E08E /* UILabelExtension.swift in Sources */,
