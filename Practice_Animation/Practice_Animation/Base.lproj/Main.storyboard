@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mRN-go-H6A">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,37 +15,57 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Practice_Animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rr7-8b-woe">
-                                <rect key="frame" x="92" y="94" width="191" height="30"/>
+                                <rect key="frame" x="64.5" y="94" width="191" height="30"/>
                                 <state key="normal" title="Animation with UIView Func"/>
                                 <connections>
                                     <segue destination="gJh-sU-pLX" kind="show" id="Nse-Di-Dyt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2D-cV-zr0">
-                                <rect key="frame" x="107.5" y="154" width="160" height="30"/>
+                                <rect key="frame" x="80" y="154" width="160" height="30"/>
                                 <state key="normal" title="Drag(spring) Animation"/>
                                 <connections>
                                     <segue destination="xNp-Jz-2FF" kind="show" id="sQh-TG-YCu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjF-K8-O5v">
-                                <rect key="frame" x="126" y="214" width="123" height="30"/>
+                                <rect key="frame" x="98.5" y="214" width="123" height="30"/>
                                 <state key="normal" title="Auto Slider Action"/>
                                 <connections>
                                     <segue destination="T5r-W5-NFD" kind="show" id="4SL-H0-cv1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxt-RQ-hgE">
+                                <rect key="frame" x="0.0" y="274" width="320" height="30"/>
+                                <state key="normal" title="Touch Animation (with layout constraints)"/>
+                                <connections>
+                                    <segue destination="yj6-sB-6eg" kind="show" id="Hfo-Zv-esT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEw-IV-iLZ">
+                                <rect key="frame" x="20" y="334" width="280" height="30"/>
+                                <state key="normal" title="Scroll Animation"/>
+                                <connections>
+                                    <segue destination="O1t-9n-dhh" kind="show" id="bKr-2F-dAm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zxt-RQ-hgE" secondAttribute="trailing" id="8sF-lc-3lY"/>
+                            <constraint firstItem="VEw-IV-iLZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ITw-5D-aHg"/>
                             <constraint firstItem="LjF-K8-O5v" firstAttribute="top" secondItem="K2D-cV-zr0" secondAttribute="bottom" constant="30" id="Okq-zR-VlY"/>
                             <constraint firstItem="LjF-K8-O5v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ScF-Fp-574"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VEw-IV-iLZ" secondAttribute="trailing" constant="20" id="Sdb-KE-6Kc"/>
+                            <constraint firstItem="Zxt-RQ-hgE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X7g-O2-QeI"/>
                             <constraint firstItem="K2D-cV-zr0" firstAttribute="top" secondItem="Rr7-8b-woe" secondAttribute="bottom" constant="30" id="cNh-rl-SNg"/>
+                            <constraint firstItem="VEw-IV-iLZ" firstAttribute="top" secondItem="Zxt-RQ-hgE" secondAttribute="bottom" constant="30" id="iLB-wU-tda"/>
                             <constraint firstItem="Rr7-8b-woe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="lUR-uU-dSS"/>
+                            <constraint firstItem="Zxt-RQ-hgE" firstAttribute="top" secondItem="LjF-K8-O5v" secondAttribute="bottom" constant="30" id="sBw-Ed-u45"/>
                             <constraint firstItem="K2D-cV-zr0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v64-Xa-3JD"/>
                             <constraint firstItem="Rr7-8b-woe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vUH-e2-xE6"/>
                         </constraints>
@@ -62,7 +82,7 @@
             <objects>
                 <viewController id="xNp-Jz-2FF" customClass="DragAnimationViewController" customModule="Practice_Animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="veg-HU-9MZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Teacher_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="tUZ-bH-GMZ" customClass="DragImageView" customModule="Practice_Animation" customModuleProvider="target">
@@ -107,7 +127,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation Delay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtY-dj-p0k">
                             <rect key="frame" x="20" y="138" width="150" height="21"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="150" id="qdW-sd-YHa"/>
+                                <constraint firstAttribute="width" constant="150" placeholder="YES" id="qdW-sd-YHa"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,7 +136,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation Damping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hX-f7-vpV">
                             <rect key="frame" x="20" y="213" width="150" height="21"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="150" id="7vN-vg-RGM"/>
+                                <constraint firstAttribute="width" constant="150" placeholder="YES" id="7vN-vg-RGM"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -125,7 +145,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation Velocity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ed5-6S-keP">
                             <rect key="frame" x="20" y="288" width="150" height="21"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="150" id="tY5-4m-HYk"/>
+                                <constraint firstAttribute="width" constant="150" placeholder="YES" id="tY5-4m-HYk"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -182,7 +202,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcx-4w-hGm">
                             <rect key="frame" x="20" y="63" width="150" height="21"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="150" id="jCA-ei-lwD"/>
+                                <constraint firstAttribute="width" constant="150" placeholder="YES" id="jCA-ei-lwD"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -236,22 +256,144 @@
             </objects>
             <point key="canvasLocation" x="1910" y="134"/>
         </scene>
+        <!--Scroll Animation View Controller-->
+        <scene sceneID="XA9-Mo-9eb">
+            <objects>
+                <viewController id="O1t-9n-dhh" customClass="ScrollAnimationViewController" customModule="Practice_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dcY-5Z-wed">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zk6-wn-n13">
+                                <rect key="frame" x="0.0" y="488" width="320" height="80"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="delegate" destination="O1t-9n-dhh" id="pQd-ty-pQp"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yQE-QT-kDy" firstAttribute="trailing" secondItem="Zk6-wn-n13" secondAttribute="trailing" id="LLe-ev-aLu"/>
+                            <constraint firstItem="Zk6-wn-n13" firstAttribute="top" secondItem="yQE-QT-kDy" secondAttribute="bottom" constant="-80" id="oQY-5b-d9F"/>
+                            <constraint firstItem="Zk6-wn-n13" firstAttribute="leading" secondItem="yQE-QT-kDy" secondAttribute="leading" id="sD1-nQ-Nwi"/>
+                            <constraint firstItem="Zk6-wn-n13" firstAttribute="bottom" secondItem="yQE-QT-kDy" secondAttribute="bottom" id="ylV-Kf-HDN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yQE-QT-kDy"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="Zk6-wn-n13" id="aRJ-ec-s6v"/>
+                        <outlet property="view_Content" destination="4LG-RV-jax" id="8ZU-5X-Jlx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C3F-ax-Xk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="4LG-RV-jax">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="Jbd-Iw-hSV"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="358" y="860"/>
+        </scene>
+        <!--Touch Animation View Controller-->
+        <scene sceneID="22Z-2t-Gqi">
+            <objects>
+                <viewController id="yj6-sB-6eg" customClass="TouchAnimationViewController" customModule="Practice_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Upo-cF-OcW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhc-Wy-IQ1">
+                                <rect key="frame" x="0.0" y="478" width="320" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cmx-VQ-OJP"/>
+                                </constraints>
+                                <state key="normal" title="Touch Me!"/>
+                                <connections>
+                                    <action selector="action_TouchDown:" destination="yj6-sB-6eg" eventType="touchDown" id="AMg-33-poa"/>
+                                    <action selector="action_TouchUp:" destination="yj6-sB-6eg" eventType="touchUpInside" id="XRq-cP-2Vl"/>
+                                    <action selector="action_TouchUp:" destination="yj6-sB-6eg" eventType="touchUpOutside" id="haH-jk-yf2"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MtY-BH-jcw">
+                                <rect key="frame" x="100" y="74" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.49556751943005184" green="0.49556751943005184" blue="0.49556751943005184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MtY-BH-jcw" secondAttribute="height" multiplier="1:1" id="X8Y-kL-QmX"/>
+                                    <constraint firstAttribute="height" constant="120" id="vW9-Pr-1nF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2v-V8-sOc">
+                                <rect key="frame" x="30" y="219" width="260" height="130"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="j2v-V8-sOc" secondAttribute="height" multiplier="2:1" id="nBe-Bg-oH3"/>
+                                    <constraint firstAttribute="width" constant="260" id="yEr-Bd-iUx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="USg-eS-Ogx" firstAttribute="trailing" secondItem="Bhc-Wy-IQ1" secondAttribute="trailing" id="2kg-IL-E8U"/>
+                            <constraint firstItem="MtY-BH-jcw" firstAttribute="centerX" secondItem="Upo-cF-OcW" secondAttribute="centerX" id="R2h-Ri-8FN"/>
+                            <constraint firstItem="USg-eS-Ogx" firstAttribute="bottom" secondItem="Bhc-Wy-IQ1" secondAttribute="bottom" constant="30" id="oXX-Bj-xkM"/>
+                            <constraint firstItem="j2v-V8-sOc" firstAttribute="centerY" secondItem="Upo-cF-OcW" secondAttribute="centerY" id="oiZ-8X-Ja4"/>
+                            <constraint firstItem="j2v-V8-sOc" firstAttribute="centerX" secondItem="Upo-cF-OcW" secondAttribute="centerX" id="pHi-NF-tnB"/>
+                            <constraint firstItem="MtY-BH-jcw" firstAttribute="centerY" secondItem="Upo-cF-OcW" secondAttribute="centerY" constant="-150" id="tph-rT-umm"/>
+                            <constraint firstItem="Bhc-Wy-IQ1" firstAttribute="leading" secondItem="USg-eS-Ogx" secondAttribute="leading" id="tyP-bq-DA2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="USg-eS-Ogx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="C2K-79-PFR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="d93-Ru-t0j">
+                            <connections>
+                                <segue destination="MCI-Bs-fca" kind="show" id="LlY-bf-RoU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="layout_Target2CenterY" destination="oiZ-8X-Ja4" id="qTb-C3-VHw"/>
+                        <outlet property="layout_Target2Width" destination="yEr-Bd-iUx" id="nmR-ue-g40"/>
+                        <outlet property="view_AnimationTarget" destination="MtY-BH-jcw" id="XyE-WH-1J2"/>
+                        <outlet property="view_AnimationTarget2" destination="j2v-V8-sOc" id="OlH-BD-W8Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pb0-Yb-jM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="860"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ptU-zf-iVA">
+            <objects>
+                <viewController id="MCI-Bs-fca" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U6l-fZ-ZJ8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fw3-dG-6Vl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HoT-6R-cMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="1636"/>
+        </scene>
         <!--Key Value Observing View Controller-->
         <scene sceneID="uNI-ha-ZF0">
             <objects>
                 <viewController id="T5r-W5-NFD" customClass="KeyValueObservingViewController" customModule="Practice_Animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mrr-8p-A4N">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6t6-ir-ipH">
-                                <rect key="frame" x="28" y="587" width="319" height="31"/>
+                                <rect key="frame" x="28" y="488" width="264" height="31"/>
                                 <connections>
                                     <action selector="setValueWithSlider:" destination="7UX-MH-rcO" eventType="valueChanged" id="vKy-wM-6Ya"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UX-MH-rcO">
-                                <rect key="frame" x="30" y="546" width="315" height="21"/>
+                                <rect key="frame" x="30" y="447" width="260" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -275,14 +417,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQz-zc-tRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1910" y="801"/>
+            <point key="canvasLocation" x="1910" y="861"/>
         </scene>
         <!--View Animation View Controller-->
         <scene sceneID="IPQ-mf-eZ8">
             <objects>
                 <viewController id="gJh-sU-pLX" customClass="UIViewAnimationViewController" customModule="Practice_Animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UGy-NF-sFg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Teacher_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="dAU-Vo-S0G">
@@ -290,14 +432,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5N0-TV-3Pq">
-                                <rect key="frame" x="162.5" y="527" width="50" height="50"/>
+                                <rect key="frame" x="135" y="428" width="50" height="50"/>
                                 <state key="normal" title="Up"/>
                                 <connections>
                                     <action selector="action_AnimationWithSender:" destination="gJh-sU-pLX" eventType="touchUpInside" id="0VD-Wv-TEM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oL-G0-isH">
-                                <rect key="frame" x="162.5" y="597" width="50" height="50"/>
+                                <rect key="frame" x="135" y="498" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JkL-qc-IN7"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="rgJ-ma-Cah"/>
@@ -308,14 +450,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krM-yO-X1C">
-                                <rect key="frame" x="102.5" y="562" width="50" height="50"/>
+                                <rect key="frame" x="75" y="463" width="50" height="50"/>
                                 <state key="normal" title="Left"/>
                                 <connections>
                                     <action selector="action_AnimationWithSender:" destination="gJh-sU-pLX" eventType="touchUpInside" id="W0c-B4-688"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp4-FP-0ra">
-                                <rect key="frame" x="222.5" y="562" width="50" height="50"/>
+                                <rect key="frame" x="195" y="463" width="50" height="50"/>
                                 <state key="normal" title="Right"/>
                                 <connections>
                                     <action selector="action_AnimationWithSender:" destination="gJh-sU-pLX" eventType="touchUpInside" id="bbD-9y-xB4"/>
@@ -491,7 +633,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mRN-go-H6A" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dpj-3m-B0g">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

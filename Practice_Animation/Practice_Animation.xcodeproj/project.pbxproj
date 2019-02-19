@@ -19,6 +19,8 @@
 		897CAE62221AA65F0047E08E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CAE61221AA65F0047E08E /* StringExtension.swift */; };
 		897CAE64221AAEC30047E08E /* DragAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CAE63221AAEC30047E08E /* DragAnimationViewController.swift */; };
 		89F23727221BA2EF0056C208 /* DragImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F23726221BA2EF0056C208 /* DragImageView.swift */; };
+		89F23729221BDF800056C208 /* ScrollAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F23728221BDF800056C208 /* ScrollAnimationViewController.swift */; };
+		89F2372B221BF08F0056C208 /* TouchAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F2372A221BF08F0056C208 /* TouchAnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		897CAE61221AA65F0047E08E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		897CAE63221AAEC30047E08E /* DragAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAnimationViewController.swift; sourceTree = "<group>"; };
 		89F23726221BA2EF0056C208 /* DragImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragImageView.swift; sourceTree = "<group>"; };
+		89F23728221BDF800056C208 /* ScrollAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollAnimationViewController.swift; sourceTree = "<group>"; };
+		89F2372A221BF08F0056C208 /* TouchAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchAnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				897CAC5A221A8A3D0047E08E /* UIViewAnimationViewController.swift */,
 				897CAE5C221AA0670047E08E /* KeyValueObservingViewController.swift */,
 				897CAE63221AAEC30047E08E /* DragAnimationViewController.swift */,
+				89F2372A221BF08F0056C208 /* TouchAnimationViewController.swift */,
+				89F23728221BDF800056C208 /* ScrollAnimationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -204,7 +210,9 @@
 				897CAE62221AA65F0047E08E /* StringExtension.swift in Sources */,
 				897CAE60221AA2F90047E08E /* UILabelExtension.swift in Sources */,
 				897CAC48221A89000047E08E /* AppDelegate.swift in Sources */,
+				89F23729221BDF800056C208 /* ScrollAnimationViewController.swift in Sources */,
 				897CAC5B221A8A3D0047E08E /* UIViewAnimationViewController.swift in Sources */,
+				89F2372B221BF08F0056C208 /* TouchAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
